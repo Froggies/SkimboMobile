@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="allColumns">
+		<TableView id="tableView">
+			<TableViewSection headerTitle="Columns" id="sectionColumns">
+			</TableViewSection>
+			<TableViewSection headerTitle="Notifications" id="sectionNotifications">
+			</TableViewSection>
+		</TableView>
+	</Window>
+</Alloy>
