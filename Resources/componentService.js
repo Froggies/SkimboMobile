@@ -71,8 +71,8 @@ exports.createConnectionWebView = function(providerName) {
         for (i = 0; cookies.length - 1 >= i; i++) {
             var tabCookie = cookies[i].trim().split("=");
             if ("tokenSkimbo" == tabCookie[0]) {
-                var tabController = Alloy.createController("tab");
-                tabController.getView().open();
+                var application = Alloy.createController("application");
+                application.getView().open();
                 Ti.App.Properties.setString("userToken", tabCookie[1]);
                 connectionWindow.close();
             }

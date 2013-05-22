@@ -7,8 +7,8 @@ var userToken = Ti.App.Properties.getString("userToken");
 var userIsConnected = userToken != undefined;
 
 if (userIsConnected == true) {
-	var tabController = Alloy.createController('tab'); 
-	tabController.getView().open();
+	var applicationController = Alloy.createController('application'); 
+	applicationController.getView().open();
 } else {
 	providersService.getAllConnectionProviders(function(data){
 		var dataTransformed = [];
