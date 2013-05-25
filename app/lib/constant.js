@@ -5,7 +5,7 @@
 
 /***  Url handler *******/
 function getServerUrl() {
-	return "http://skimbo-froggies.rhcloud.com/";
+	return Alloy.CFG.serverUrl;
 }
 
 exports.getProvidersUrl = function() {

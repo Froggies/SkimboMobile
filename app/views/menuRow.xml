@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id="menuRow">
+		<ImageView id="icon">
+		<Label id="item"/>
+		<View id="separator"/>
+	</TableViewRow>
+</Alloy>	

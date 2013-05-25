@@ -5,7 +5,6 @@ function Controller() {
     var $ = this;
     var exports = {};
     $.__views.index = Ti.UI.createWindow({
-        backgroundColor: "white",
         id: "index"
     });
     $.__views.index && $.addTopLevelView($.__views.index);
@@ -21,6 +20,8 @@ function Controller() {
     var componentService = require("componentService");
     var userToken = Ti.App.Properties.getString("userToken");
     var userIsConnected = void 0 != userToken;
+    var menuWindowController = Alloy.createController("menu");
+    menuWindowController.getView().open();
     if (true == userIsConnected) {
         var applicationController = Alloy.createController("application");
         applicationController.getView().open();

@@ -1,0 +1,6 @@
+<Alloy>
+		<View id="headerViewWindow">
+			<Button id="navigationButton"/>
+			<Label id="windowTitle"></Label>
+		</View>
+</Alloy>

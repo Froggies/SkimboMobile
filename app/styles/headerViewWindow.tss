@@ -1,0 +1,33 @@
+".containerView": {
+	backgroundColor: "#F5F5F5",
+	layout: "vertical",
+	top: 0,
+	left: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	height: Ti.UI.FILL,
+	visible: true
+},
+"#headerViewWindow": {
+	backgroundColor: "#545454",
+	height: 60,
+	visible: true
+},
+"#navigationButton": {
+	top: 11,
+    left: 11,
+    height: 39,
+    width: 41,
+    backgroundImage:'/images/light_list@2x.png'
+},
+"#windowTitle": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	color: "#fff",
+	font: {
+		fontSize: "16dp",
+		fontWeight: "bold"
+	}
+},
+"TableView": {
+	width: Ti.UI.FILL
+}

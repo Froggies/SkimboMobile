@@ -1,8 +1,14 @@
 {
-	"global": {}, 
-	"env:development": {}, 
+	"global": {
+		"menuWidth": "220dp"
+	}, 
+	"env:development": {
+		"serverUrl": "http://skimbo-froggies.rhcloud.com/"
+	}, 
 	"env:test": {}, 
-	"env:production": {}, 
+	"env:production": {
+		"serverUrl": "http://skimbo-froggies.rhcloud.com/"
+	}, 
 	"os:ios": {}, 
 	"os:android": {}, 
 	"dependencies": {

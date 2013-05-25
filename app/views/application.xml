@@ -1,5 +1,5 @@
 <Alloy>
-		<TabGroup id="tab">
+	<!--	<TabGroup id="tab">
 			<Tab title="Home" icon="images/light_home@2x.png" id="tab1">
 				<Require type="view" src="allColumns" id="allColumnsTab"/>	
 			</Tab>
@@ -17,4 +17,9 @@
 				</Window>
 			</Tab>
 		</TabGroup>
+	-->
+		<Window class="container" id="applicationWindow">
+			<Require src="headerViewWindow" />
+		</Window>
+		
 </Alloy>

@@ -4,68 +4,34 @@ function Controller() {
     arguments[0] ? arguments[0]["$model"] : null;
     var $ = this;
     var exports = {};
-    $.__views.tab = Ti.UI.createTabGroup({
-        id: "tab"
+    $.__views.applicationWindow = Ti.UI.createWindow({
+        backgroundColor: "#F5F5F5",
+        layout: "vertical",
+        top: 0,
+        left: 0,
+        width: Ti.Platform.displayCaps.platformWidth,
+        height: Ti.UI.FILL,
+        id: "applicationWindow"
     });
-    $.__views.allColumnsTab = Alloy.createController("allColumns", {
-        id: "allColumnsTab"
+    $.__views.applicationWindow && $.addTopLevelView($.__views.applicationWindow);
+    $.__views.__alloyId1 = Alloy.createController("headerViewWindow", {
+        id: "__alloyId1",
+        __parentSymbol: $.__views.applicationWindow
     });
-    $.__views.tab1 = Ti.UI.createTab({
-        height: "",
-        window: $.__views.allColumnsTab.getViewEx({
-            recurse: true
-        }),
-        title: "Home",
-        icon: "images/light_home@2x.png",
-        id: "tab1"
-    });
-    $.__views.tab.addTab($.__views.tab1);
-    $.__views.skimber = Ti.UI.createWindow({
-        backgroundColor: "#fff",
-        id: "skimber",
-        title: "Tab 2"
-    });
-    $.__views.__alloyId2 = Ti.UI.createLabel({
-        text: "I am Window 2",
-        id: "__alloyId2"
-    });
-    $.__views.skimber.add($.__views.__alloyId2);
-    $.__views.__alloyId1 = Ti.UI.createTab({
-        height: "",
-        window: $.__views.skimber,
-        title: "Skimber !",
-        icon: "images/light_list@2x.png",
-        id: "__alloyId1"
-    });
-    $.__views.tab.addTab($.__views.__alloyId1);
-    $.__views.addColumn = Ti.UI.createWindow({
-        backgroundColor: "#fff",
-        id: "addColumn"
-    });
-    $.__views.__alloyId3 = Ti.UI.createTab({
-        height: "",
-        window: $.__views.addColumn,
-        title: "Add column",
-        icon: "images/light_list---add@2x.png",
-        id: "__alloyId3"
-    });
-    $.__views.tab.addTab($.__views.__alloyId3);
-    $.__views.settings = Ti.UI.createWindow({
-        backgroundColor: "#fff",
-        id: "settings"
-    });
-    $.__views.__alloyId4 = Ti.UI.createTab({
-        height: "",
-        window: $.__views.settings,
-        title: "Settings",
-        icon: "images/light_gears@2x.png",
-        id: "__alloyId4"
-    });
-    $.__views.tab.addTab($.__views.__alloyId4);
-    $.__views.tab && $.addTopLevelView($.__views.tab);
+    $.__views.__alloyId1.setParent($.__views.applicationWindow);
     exports.destroy = function() {};
     _.extend($, $.__views);
     require("commandService");
+    var menuService = require("menuService");
+    Ti.App.addEventListener("SKIMBO:menuOpen", function() {
+        if (Ti.App.Properties.getBool("menuOpen")) {
+            $.applicationWindow.animate(menuService.menuShow(0));
+            Ti.App.Properties.setBool("menuOpen", false);
+        } else {
+            $.applicationWindow.animate(menuService.menuShow(Alloy.CFG.menuWidth));
+            Ti.App.Properties.setBool("menuOpen", true);
+        }
+    });
     _.extend($, exports);
 }
 

@@ -6,6 +6,10 @@ var userToken = Ti.App.Properties.getString("userToken");
 
 var userIsConnected = userToken != undefined;
 
+var menuWindowController = Alloy.createController('menu');
+menuWindowController.getView().open(); 
+
+
 if (userIsConnected == true) {
 	var applicationController = Alloy.createController('application'); 
 	applicationController.getView().open();

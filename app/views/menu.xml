@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="menuWindow">
+		<View id="menu">
+			<View id="headerView1">
+				<ImageView id="logoImage"/>
+				<Label id="titleLabel"/>
+			</View>
+			<TableView id="menuList"/>
+		</View>
+	</Window>
+</Alloy>

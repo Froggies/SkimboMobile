@@ -1,0 +1,37 @@
+"TableView": {
+	left: 0,
+	width: Alloy.CFG.menuWidth,
+	height: Ti.UI.FILL,
+	backgroundColor: "transparent",
+	separatorColor: "#1c252b"
+},
+"#menu": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	backgroundColor: "#2F2F2F",
+	layout: "vertical"
+},
+"#headerView1": {
+	left: 0,
+	width: Alloy.CFG.menuWidth,
+	height: "50dp",
+	layout: "horizontal"
+},
+"#logoImage": {
+	left: "10dp",
+	top: "3dp",
+	width: "54dp",
+	height: "42dp",
+	image: "/images/light_home.png"
+},
+"#titleLabel": {
+	left: "10dp",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	color: "#fff",
+	font: {
+		fontSize: "16dp",
+		fontWeight: "bold"
+	},
+	text: "Skimbo"
+}
