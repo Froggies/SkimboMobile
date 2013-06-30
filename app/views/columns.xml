@@ -1,0 +1,5 @@
+<Alloy>
+	<View class="columnsView">
+		<TableView id="columnsList"/>
+	</View>
+</Alloy>

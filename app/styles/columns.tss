@@ -1,0 +1,7 @@
+"TableView": {
+	left: 0,
+	width: Alloy.CFG.menuWidth,
+	height: Ti.UI.FILL,
+	backgroundColor: "white",
+	separatorColor: "#1c252b"
+}

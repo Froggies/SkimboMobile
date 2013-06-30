@@ -1,0 +1,15 @@
+<Alloy>
+	<TableViewRow id="columnRow">
+		<Label id="name" />
+		<View id="separator" />
+		<View id="controls">
+			<View id="socialNetworks" />
+			<View id="verticalSeparator" />
+	<!--		<View id="actions">
+				<Button id="settingButton" />
+				<Button id="deleteButton" />  
+			</View> 
+	-->
+		</View>
+	</TableViewRow>
+</Alloy>

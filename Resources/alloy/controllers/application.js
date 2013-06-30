@@ -21,7 +21,7 @@ function Controller() {
     $.__views.__alloyId1.setParent($.__views.applicationWindow);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    require("commandService");
+    var commandService = require("commandService");
     var menuService = require("menuService");
     Ti.App.addEventListener("SKIMBO:menuOpen", function() {
         if (Ti.App.Properties.getBool("menuOpen")) {
@@ -32,6 +32,7 @@ function Controller() {
             Ti.App.Properties.setBool("menuOpen", true);
         }
     });
+    commandService.connectWithSkimbo();
     _.extend($, exports);
 }
 

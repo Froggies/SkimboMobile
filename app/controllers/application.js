@@ -2,9 +2,6 @@ var commandService = require("commandService");
 
 var menuService = require("menuService");
 
-
-
-
 /*
  * Menu
  */
@@ -22,3 +19,5 @@ Ti.App.addEventListener("SKIMBO:menuOpen", function(e) {
 		Ti.App.Properties.setBool('menuOpen', true);		
 	}
 });
+
+commandService.connectWithSkimbo();

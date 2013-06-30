@@ -4,13 +4,10 @@ var componentService = require("componentService");
 
 var userToken = Ti.App.Properties.getString("userToken");
 
-var userIsConnected = userToken != undefined;
+var userIsConnected = userToken !== (undefined || null); 
 
-var menuWindowController = Alloy.createController('menu');
-menuWindowController.getView().open(); 
-
-
-if (userIsConnected == true) {
+	/*
+if (userIsConnected === true) {
 	var applicationController = Alloy.createController('application'); 
 	applicationController.getView().open();
 } else {
@@ -30,6 +27,8 @@ if (userIsConnected == true) {
 		    backgroundSelectedColor: 'white'
 		});
 	});
-	$.index.open();
 }
+	*/
+	$.index.open();
+
 

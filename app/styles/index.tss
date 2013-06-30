@@ -1,0 +1,59 @@
+"Window": {
+	backgroundGradient: {
+		type: 'linear',
+		startPoint: { x: '100%', y: '0%' },
+		endPoint: { x: '0%', y: '100%' },
+		colors: [ { color: '#FAFAFA', offset: 0.0}, { color: '#C7C7C7', offset: 1 }],
+	},
+	layout: "vertical"
+},
+"#logo": {
+	image: "/images/logo.png",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	top: "30dp"
+},	
+"#connectWithFacebookView": {
+	backgroundColor: "#325C99"
+},
+"#connectWithFacebookText": {
+	text: L('connect_with_facebook')
+},
+"#connectWithTwitterView": {
+	backgroundColor: "#00BAF0"
+},
+"#connectWithTwitterText": {
+	text: L('connect_with_twitter')
+},
+"#connectWithGoogleView": {
+	backgroundColor: "#E54C32"
+},
+"#connectWithGoogleText": {
+	text: L('connect_with_google')
+},
+".iconConnexionProvider": {
+	font: {
+		fontSize: "55dp",
+		fontFamily: "EntypoSocial"
+	},
+	color: "#FFFFFF"
+},
+".connexionView": {
+	color: "#FFFFFF",
+	height: "50dp",
+	width: "250dp",
+	layout: "horizontal"
+},
+".labelConnexion": {
+	color: "#FFFFFF",
+	font: {
+		fontSize: "30dp"
+	}
+},
+"#verticalSeparator": {
+	bottom: 0,
+	left: 0,
+	width: '1dp',
+	height: Ti.UI.FILL,
+	backgroundColor: '#2F2F2F'
+}

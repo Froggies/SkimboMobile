@@ -1,5 +1,20 @@
 <Alloy>
 	<Window>
-		<Widget id="connectionProviders" src="com.appcelerator.buttongrid"/>
+		<ImageView id="logo" />
+		<View id="connectWithFacebookView" class="connexionView">
+			<Label class="iconConnexionProvider" text="">
+			<View id="verticalSeparator"/>
+			<Label id="connectWithFacebookText" class="labelConnexion">
+		</View>
+		<View id="connectWithTwitterView" class="connexionView">
+			<Label class="iconConnexionProvider" text="">
+			<View id="verticalSeparator"/>	
+			<Label id="connectWithTwitterText" class="labelConnexion">
+		</View>
+		<View id="connectWithGoogleView" class="connexionView">
+			<Label class="iconConnexionProvider" text="">
+			<View id="verticalSeparator"/>
+			<Label id="connectWithGoogleText" class="labelConnexion">
+		</View>
 	</Window>
 </Alloy>

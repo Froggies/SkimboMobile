@@ -20,6 +20,7 @@
 	-->
 		<Window class="container" id="applicationWindow">
 			<Require src="headerViewWindow" />
+		<!--	<Require src="columns"> -->
 		</Window>
 		
 </Alloy>
