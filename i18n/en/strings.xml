@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="app_name">Skimbo</string>
+
+	<string name="connect_with_facebook">Sign in with Facebook</string>
+	<string name="connect_with_twitter">Sign in with Twitter</string>
+	<string name="connect_with_google">Sign in with Google</string>
+
+</resources>

@@ -1,19 +1,22 @@
 <Alloy>
-	<Window>
+	<Window id="index">
 		<ImageView id="logo" />
 		<View id="connectWithFacebookView" class="connexionView">
-			<Label class="iconConnexionProvider" text="">
-			<View id="verticalSeparator"/>
+			<View class="iconProviderView">
+				<Label class="iconConnexionProvider" text="">
+			</View>
 			<Label id="connectWithFacebookText" class="labelConnexion">
 		</View>
 		<View id="connectWithTwitterView" class="connexionView">
-			<Label class="iconConnexionProvider" text="">
-			<View id="verticalSeparator"/>	
+			<View class="iconProviderView">
+				<Label class="iconConnexionProvider" text="">
+			</View>
 			<Label id="connectWithTwitterText" class="labelConnexion">
 		</View>
 		<View id="connectWithGoogleView" class="connexionView">
-			<Label class="iconConnexionProvider" text="">
-			<View id="verticalSeparator"/>
+			<View class="iconProviderView">
+				<Label class="iconConnexionProvider" text="">
+			</View>
 			<Label id="connectWithGoogleText" class="labelConnexion">
 		</View>
 	</Window>

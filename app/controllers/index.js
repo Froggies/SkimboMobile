@@ -1,10 +1,10 @@
-var providersService = require("providersService");
-var constant = require("constant");
-var componentService = require("componentService");
-
-var userToken = Ti.App.Properties.getString("userToken");
-
-var userIsConnected = userToken !== (undefined || null); 
+// var providersService = require("providersService");
+// var constant = require("constant");
+// var componentService = require("componentService");
+// 
+// var userToken = Ti.App.Properties.getString("userToken");
+// 
+// var userIsConnected = userToken !== (undefined || null); 
 
 	/*
 if (userIsConnected === true) {
