@@ -15,7 +15,7 @@ for(var i=0; i<args.socialNetworks.length; i++) {
 		width: "24px",
 		height: "24px"
 	});
-	$.socialNetworks.add(image);
+//	$.socialNetworks.add(image);
 }
 
 // TODO: Bug Android... Récupération de rowID via title. (e.rowData.title vers e.rowData.rowId)

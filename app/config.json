@@ -1,17 +1,16 @@
 {
 	"global": {
-		"menuWidth": "220dp"
+		"menuWidth": "220dp",
+		"serverUrl": "http://192.168.1.24:9000"
 	}, 
 	"env:development": {
-		"serverUrl": "http://skimbo-froggies.rhcloud.com/"
 	}, 
-	"env:test": {}, 
+	"env:test": {
+	}, 
 	"env:production": {
-		"serverUrl": "http://skimbo-froggies.rhcloud.com/"
 	}, 
 	"os:ios": {}, 
 	"os:android": {}, 
 	"dependencies": {
-		 "com.appcelerator.buttongrid":"1.0"
 	}
 }

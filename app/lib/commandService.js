@@ -13,6 +13,7 @@ exports.on = function(type, callback) {
 
 exports.connectWithSkimbo = function() {
 	var userToken = Ti.App.Properties.getString("userToken");
+	Ti.API.info('[CommandService] --- connectWithSkimbo',userToken);
 	var url = constant.getConnectUrl(userToken);
 		var xhr = Ti.Network.createHTTPClient({
 		    onerror: function(e) {

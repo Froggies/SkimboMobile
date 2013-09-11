@@ -9,16 +9,23 @@
 	
 	var isColumnSet = false;
 
-	commandService.on("allColumns", function(response) {
-		if (isColumnSet == false) {
-			isColumnSet = true;
-			columnsFromServer = response.body;
-			init();
-		}
-		
-	});
+	// commandService.on("allColumns", function(response) {
+		// if (isColumnSet == false) {
+			// isColumnSet = true;
+			// columnsFromServer = response.body;
+			// init();
+		// }
+// 		
+	// });
 	
 	function init() {
+		if (columnsFromServer.length === 0) {
+			for(var i=0; i<10; i++) {
+				var obj = {title: "Titre "+i, unifiedRequests: [{service:"service.test"+i}, {service:"service2.test"+i}], rowId:i};
+				columnsFromServer.push(obj);
+			}
+			Ti.API.info('[Column] dans if empty', columnsFromServer);
+		}
 		for(var i=0; i<columnsFromServer.length; i++) {
 			//var row = componentService.createRowForColumn(columnsFromServer[i].title, i, columnsFromServer.length);
 			//$.sectionColumns.add(row);
@@ -47,5 +54,6 @@
 		});
 	}
 	
+	init();
 	
 })();

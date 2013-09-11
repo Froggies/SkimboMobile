@@ -5,5 +5,8 @@
 	<string name="connect_with_facebook">Se connecter avec Facebook</string>
 	<string name="connect_with_twitter">Se connecter avec Twitter</string>
 	<string name="connect_with_google">Se connecter avec Google</string>
-
+	<string name="my_columns">Colonnes</string>
+	<string name="skimber">Skimber !</string>
+	<string name="add_column">Ajouter colonne</string>
+	<string name="settings">Paramètres</string>
 </resources>

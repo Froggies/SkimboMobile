@@ -2,7 +2,6 @@
  * @author AudreyN
  */
 
-
 /***  Url handler *******/
 function getServerUrl() {
 	return Alloy.CFG.serverUrl;
@@ -17,6 +16,7 @@ exports.getConnectUrl = function(token) {
 }
 
 exports.getAuthUrl = function(providerName) {
+	Ti.API.info('url ', getServerUrl() + "/api/mobile/auth/" + providerName);
 	return getServerUrl() + "/api/mobile/auth/" + providerName;
 }
 

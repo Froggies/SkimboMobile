@@ -1,10 +1,10 @@
 <Alloy>
 	<Window id="allColumns">
-		<TableView id="tableView">
-			<TableViewSection headerTitle="Columns" id="sectionColumns">
-			</TableViewSection>
-			<TableViewSection headerTitle="Notifications" id="sectionNotifications">
-			</TableViewSection>
-		</TableView>
+		 <ScrollableView id="scrollableView" showPagingControl="true">
+            <!-- <View id="view1" backgroundColor="#123" /> -->
+			<Require src="columns" />
+            <View id="view2" backgroundColor="#246" />
+            <View id="view3" backgroundColor="#48b" />
+        </ScrollableView>
 	</Window>
 </Alloy>

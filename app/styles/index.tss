@@ -1,10 +1,11 @@
 "#index": {
-	backgroundGradient: {
-		type: 'linear',
-		startPoint: { x: '0%', y: '0%' },
-		endPoint: { x: '0%', y: '100%' },
-		colors: [ { color: '#FAFAFA', offset: 0.0}, { color: '#C7C7C7', offset: 1 }]
-	},
+	// backgroundGradient: {
+		// type: 'linear',
+		// startPoint: { x: '0%', y: '0%' },
+		// endPoint: { x: '0%', y: '100%' },
+		// colors: [ { color: '#FAFAFA', offset: 0.0}, { color: '#C7C7C7', offset: 1 }]
+	// },
+	backgroundColor: "#C7C7C7",
 	layout: "vertical"
 },
 "#logo": {
@@ -50,13 +51,13 @@
 ".connexionView": {
 	color: "#FFFFFF",
 	height: "50dp",
-	width: "250dp",
+	width: "275dp",
 	layout: "horizontal"
 },
 ".labelConnexion": {
 	color: "#FFFFFF",
 	font: {
-		fontSize: "20dp"
+		fontSize: "18dp"
 	},
 	left: "3dp"
 },

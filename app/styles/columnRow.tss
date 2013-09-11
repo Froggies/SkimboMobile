@@ -1,3 +1,52 @@
-".container": {
-	backgroundColor: "white"
+"#mainView": {
+	height: "80dp"
+},
+"#controls": {
+	layout: "vertical",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	left: "2dp",
+	right: "2dp"
+},
+"#controlsNext": {
+	layout: "vertical",
+	width: "35dp",
+	right: "2dp",
+	height: Ti.UI.FILL
+},
+"#columnView": {
+	layout: "vertical",
+	left:"40dp",
+	width: Ti.UI.SIZE
+},
+"#labelViewMore": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.FILL,
+	right: 0
+},
+"#separator": {
+	height: "3dp",
+	width: "1dp"
+},
+".columnTitle": {
+    font: {
+        fontSize: "20dp"
+    },
+    color: "#8F8F8F",
+    width: Ti.UI.SIZE,
+    left: 0
+},
+".buttonView": {
+	height: "35dp",
+	width: "35dp",
+	borderRadius: 5,
+	borderWidth: "2dp",
+	top: "2dp",
+	borderColor: "black"
+},
+".iconButton": {
+    font: {
+        fontSize: "55dp",
+        fontFamily: "Entypo"
+    }
 }

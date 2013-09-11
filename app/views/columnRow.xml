@@ -1,15 +1,31 @@
 <Alloy>
 	<TableViewRow id="columnRow">
-		<Label id="name" />
+		<!-- <Label id="name" />
 		<View id="separator" />
 		<View id="controls">
 			<View id="socialNetworks" />
 			<View id="verticalSeparator" />
-	<!--		<View id="actions">
+			<View id="actions">
 				<Button id="settingButton" />
 				<Button id="deleteButton" />  
 			</View> 
-	-->
+		</View> -->
+		
+		<View id="mainView">
+			<View id="controls">
+				<View class="buttonView"> 
+					<Label id="editColumn" class="iconButton" text="⚙"/>
+				</View>
+			</View>
+			<View id="columnView"> 
+				<Label id="name" class="columnTitle"/>
+				<!-- <View id="socialNetworks"/> -->
+			</View>
+			<View id="controlsNext">
+				<Label id="labelViewMore" class="icon" text=""/>
+			</View>
 		</View>
+		
+		
 	</TableViewRow>
 </Alloy>

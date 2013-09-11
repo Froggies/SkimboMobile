@@ -19,5 +19,5 @@ Ti.App.addEventListener("SKIMBO:menuOpen", function(e) {
 		Ti.App.Properties.setBool('menuOpen', true);		
 	}
 });
-
+Ti.API.info('Dans APPLICATION');
 commandService.connectWithSkimbo();

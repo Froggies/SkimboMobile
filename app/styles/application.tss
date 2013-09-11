@@ -1,0 +1,25 @@
+"TableView": {
+	left: 0,
+	width: Alloy.CFG.menuWidth,
+	height: Ti.UI.FILL,
+	backgroundColor: "white",
+	separatorColor: "#1c252b"
+},
+
+"#homeTab": {
+	icon: "images/light_home@2x.png",
+	title: L('my_columns')
+},
+"#skimberTab": {
+	icon: "images/icone_skimber.png",
+	title: L('skimber')
+},
+"#addColumnTab": {
+	icon: "images/icone_addcolonne.png",
+	title: L('add_column')
+},
+"#settingsTab": {
+	icon: "images/light_gears@2x.png",
+	title: L('settings')
+}
+
